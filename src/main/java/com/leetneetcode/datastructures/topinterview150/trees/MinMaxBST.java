@@ -1,4 +1,4 @@
-package com.leetneetcode.datastructures.trees;
+package com.leetneetcode.datastructures.topinterview150.trees;
 
 /**
  * Find the minimum and maximum value in a Binary Search Tree (BST).

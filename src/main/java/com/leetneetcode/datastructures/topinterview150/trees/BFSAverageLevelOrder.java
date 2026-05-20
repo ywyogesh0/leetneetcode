@@ -1,4 +1,4 @@
-package com.leetneetcode.datastructures.trees;
+package com.leetneetcode.datastructures.topinterview150.trees;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

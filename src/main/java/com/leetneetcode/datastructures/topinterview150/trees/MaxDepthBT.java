@@ -1,4 +1,4 @@
-package com.leetneetcode.datastructures.trees;
+package com.leetneetcode.datastructures.topinterview150.trees;
 
 public class MaxDepthBT {
 
