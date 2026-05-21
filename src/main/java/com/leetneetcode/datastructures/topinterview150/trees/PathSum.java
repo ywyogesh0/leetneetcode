@@ -58,7 +58,10 @@ public class PathSum {
     }
 
     private boolean hasPath(BSTNode node, int remainingSum) {
-        // Base case: leaf node
+        // base condition 1: no child
+        if(null == node) return false;
+
+        // base condition 2: leaf node
         if (null == node.leftNode && null == node.rightNode) {
             return node.data == remainingSum;
         }
