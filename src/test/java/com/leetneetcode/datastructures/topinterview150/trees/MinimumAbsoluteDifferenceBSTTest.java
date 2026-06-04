@@ -33,4 +33,16 @@ public class MinimumAbsoluteDifferenceBSTTest {
 
         assertEquals(1, sol.getMinimumAbsoluteDifference(root));
     }
+
+    @Test
+    public void testExample3_treeFiveFourSeven() {
+        // BST: [5,4,7] -> inorder order is [4,5,7], minimum diff is 1
+        MinimumAbsoluteDifferenceBST sol = new MinimumAbsoluteDifferenceBST();
+        MinimumAbsoluteDifferenceBST.BSTNode root = null;
+        root = sol.insert(root, 5);
+        root = sol.insert(root, 4);
+        root = sol.insert(root, 7);
+
+        assertEquals(1, sol.getMinimumAbsoluteDifference(root));
+    }
 }

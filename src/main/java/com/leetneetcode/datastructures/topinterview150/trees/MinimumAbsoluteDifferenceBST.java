@@ -35,7 +35,6 @@ public class MinimumAbsoluteDifferenceBST {
         inorder(node.rightNode, prev, min);
     }
 
-    // small wrappers to allow passing by reference
     static class Prev {
         BSTNode node;
     }
@@ -56,42 +55,5 @@ public class MinimumAbsoluteDifferenceBST {
         BSTNode(int data) {
             this.data = data;
         }
-    }
-
-    /**
-     * Morris inorder traversal variant to compute minimum absolute difference
-     * using O(1) extra space (mods the tree temporarily but restores it).
-     */
-    public int getMinimumAbsoluteDifferenceMorris(BSTNode root) {
-        int min = Integer.MAX_VALUE;
-        BSTNode current = root;
-        BSTNode prevNode = null;
-
-        while (current != null) {
-            if (current.leftNode == null) {
-                if (prevNode != null)
-                    min = Math.min(min, Math.abs(current.data - prevNode.data));
-                prevNode = current;
-                current = current.rightNode;
-            } else {
-                BSTNode predecessor = current.leftNode;
-                while (predecessor.rightNode != null && predecessor.rightNode != current) {
-                    predecessor = predecessor.rightNode;
-                }
-
-                if (predecessor.rightNode == null) {
-                    predecessor.rightNode = current;
-                    current = current.leftNode;
-                } else {
-                    predecessor.rightNode = null; // restore
-                    if (prevNode != null)
-                        min = Math.min(min, Math.abs(current.data - prevNode.data));
-                    prevNode = current;
-                    current = current.rightNode;
-                }
-            }
-        }
-
-        return min == Integer.MAX_VALUE ? 0 : min;
     }
 }
