@@ -58,8 +58,3 @@ mvn -DskipTests=false test
 - **Problem 48 — Top K Frequent Elements**: [src/main/java/com/ibm/TopKFrequent.java](src/main/java/com/ibm/TopKFrequent.java)
 - **Problem 49 — Union-Find**: [src/main/java/com/ibm/UnionFind.java](src/main/java/com/ibm/UnionFind.java)
 - **Problem 50 — (Utility) Sorting & Helpers**: [src/main/java/com/ibm/SortingUtils.java](src/main/java/com/ibm/SortingUtils.java), [src/main/java/com/ibm/ListNode.java](src/main/java/com/ibm/ListNode.java), [src/main/java/com/ibm/TreeNode.java](src/main/java/com/ibm/TreeNode.java), [src/main/java/com/ibm/GraphNode.java](src/main/java/com/ibm/GraphNode.java)
-
-If you'd like, I can also:
-
-- Commit these README changes and the Javadoc updates.
-- Generate a condensed table (CSV/MD table) mapping problem IDs, titles, class names, and test class names.
