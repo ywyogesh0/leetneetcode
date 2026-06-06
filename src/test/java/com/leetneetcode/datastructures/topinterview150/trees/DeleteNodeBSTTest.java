@@ -13,11 +13,11 @@ public class DeleteNodeBSTTest {
     public void testDeleteLeafNode() {
         /*
          * Visual BST:
-         *      5
-         *     / \
-         *    3   7
-         *   / \
-         *  2   4
+         * 5
+         * / \
+         * 3 7
+         * / \
+         * 2 4
          *
          * Delete: 2 (leaf)
          * Expected inorder: [3, 4, 5, 7]
@@ -39,11 +39,11 @@ public class DeleteNodeBSTTest {
     public void testDeleteNodeWithOneChild() {
         /*
          * Visual BST:
-         *      5
-         *     / \
-         *    3   8
-         *     \   \
-         *      4   9
+         * 5
+         * / \
+         * 3 8
+         * \ \
+         * 4 9
          *
          * Delete: 3 (has one right child 4)
          * Expected inorder: [4, 5, 8, 9]
@@ -65,11 +65,11 @@ public class DeleteNodeBSTTest {
     public void testDeleteNodeWithTwoChildren() {
         /*
          * Visual BST:
-         *       15
-         *      /  \
-         *     10   20
-         *    / \  / \
-         *   8  12 17 25
+         * 15
+         * / \
+         * 10 20
+         * / \ / \
+         * 8 12 17 25
          *
          * Delete: 10 (two children)
          * Expected inorder after deletion: [8, 12, 15, 17, 20, 25]
@@ -91,11 +91,11 @@ public class DeleteNodeBSTTest {
     public void testDeleteRootNode() {
         /*
          * Visual BST:
-         *      6
-         *     / \
-         *    4   8
-         *   / \   \
-         *  3   5   9
+         * 6
+         * / \
+         * 4 8
+         * / \ \
+         * 3 5 9
          *
          * Delete: 6 (root)
          * Expected inorder after deletion: [3, 4, 5, 8, 9]
@@ -117,9 +117,9 @@ public class DeleteNodeBSTTest {
     public void testDeleteNonExistentNode() {
         /*
          * Visual BST:
-         *      4
-         *     / \
-         *    2   6
+         * 4
+         * / \
+         * 2 6
          *
          * Delete: 10 (not in tree)
          * Expected inorder unchanged: [2, 4, 6]
