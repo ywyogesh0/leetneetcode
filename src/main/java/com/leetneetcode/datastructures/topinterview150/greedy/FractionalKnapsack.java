@@ -1,7 +1,5 @@
 package com.leetneetcode.datastructures.topinterview150.greedy;
 
-import java.util.Arrays;
-
 /**
  * Fractional Knapsack problem implementation.
  * 
@@ -19,8 +17,6 @@ public class FractionalKnapsack {
      */
     public static int knapSack(int W, int[] wt, int[] val, int n) {
         sortByProfitToWeight(wt, val, n);
-        System.out.println("Sorted weights: " + Arrays.toString(wt));
-        System.out.println("Sorted values: " + Arrays.toString(val));
         int max = 0;
 
         for (int i = 0; i < n; i++) {
